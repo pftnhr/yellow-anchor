@@ -1,0 +1,20 @@
+.anchor-heading {
+	/* room for your creativity */
+}
+
+.content h1:hover .headinglink,
+.content h2:hover .headinglink,
+.content h3:hover .headinglink,
+.content h4:hover .headinglink,
+.content h5:hover .headinglink,
+.content h6:hover .headinglink {
+  display: inline-flex;
+  color: var(--secondary);
+  margin-inline-start: 8px;
+  font-weight: 500;
+  user-select: none;
+}
+
+a.headinglink {
+	/* room for your creativity */
+}
