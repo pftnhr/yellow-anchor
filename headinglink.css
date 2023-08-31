@@ -1,7 +1,3 @@
-.anchor-heading {
-	/* room for your creativity */
-}
-
 .content h1:hover .headinglink,
 .content h2:hover .headinglink,
 .content h3:hover .headinglink,
@@ -10,11 +6,15 @@
 .content h6:hover .headinglink {
   display: inline-flex;
   color: var(--secondary);
-  margin-inline-start: 8px;
+  margin-inline-start: 0.5em;
   font-weight: 500;
   user-select: none;
 }
 
+.anchor-heading {
+  /* room for your creativity */
+}
+
 a.headinglink {
-	/* room for your creativity */
+  /* room for your creativity */
 }

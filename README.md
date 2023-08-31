@@ -10,25 +10,29 @@ Add anchor links next to headings in the content.
 
 ## How to make anchor links next to the contents headline
 
-Create a `[heading]` shortcut. 
+Create a `[h2]` shortcut.
 
 ## Examples
 
 Making a headline with anchor link:
 
-    [heading 2 "My level 2 headline"]
-    [heading 3 "My level 3 headline"]
+    [h2 "My level 2 headline"]
+    [h3 "My level 3 headline" ¶]
 
 becomes
 
     <h2 id="my-level-2-headline" class="anchor-heading">My level 2 headline<a href="#my-level-2-headline" class="headinglink" aria-hidden="true" hidden>#</a></h2>
-    <h3 id="my-level-3-headline" class="anchor-heading">My level 3 headline<a href="#my-level-3-headline" class="headinglink" aria-hidden="true" hidden>#</a></h3>
+    <h3 id="my-level-3-headline" class="anchor-heading">My level 3 headline<a href="#my-level-3-headline" class="headinglink" aria-hidden="true" hidden>¶</a></h3>
 
 You can create headings for all 6 levels but keep in mind that a level 1 headline should only appear once per page.
 
 ## Settings
 
-There are no settings. 
+The following settings can be configured in file system/extensions/yellow-system.ini:
+
+headinglinkContent = default link text
+
+After your headline text you can set a link text other than default.
 
 ## Acknowledgements
 
@@ -40,5 +44,5 @@ Robert Pfotenhauer. [Get help](https://datenstrom.se/yellow/help/).
 
 ## ToDo
 
-- [ ] Make it work with markdown syntax (`#`)
-- [ ] Make link text customizable
+- [x] Make it work with syntax (`h2`)
+- [x] Make link text customizable

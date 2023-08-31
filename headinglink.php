@@ -2,22 +2,24 @@
 // Headinglink extension, https://github.com/pftnhr/yellow-headinglink
 
 class YellowHeadinglink {
-	const VERSION = "0.8.21";
+	const VERSION = "0.8.22";
 	public $yellow;            //access to API
 
 	// Handle initialisation
 	public function onLoad($yellow) {
 		$this->yellow = $yellow;
+		$this->yellow->system->setDefault("headinglinkContent", "#");
 	}
 
 	// Handle page content of shortcut
 	public function onParseContentShortcut($page, $name, $text, $type) {
 		$output = null;
-		if ($name=="heading" && ($type=="block" || $type=="inline")) {
-			list($level, $content) = $this->yellow->toolbox->getTextArguments($text);
-			if (is_string_empty($level)) $level = "2";
+		$allowedNames = ["h1", "h2", "h3", "h4", "h5", "h6"];
+		if (in_array($name, $allowedNames) && ($type=="block" || $type=="inline")) {
+			list($content, $headlinktext) = $this->yellow->toolbox->getTextArguments($text);
 			if (is_string_empty($content)) $content = "Heading";
-			$output .= "<h".$level." id=\"".preg_replace('/[^a-zA-Z0-9]+/', '-', strtolower($content))."\" class=\"anchor-heading\">".$content."<a href=\"#".preg_replace('/[^a-zA-Z0-9]+/', '-', strtolower($content))."\" class=\"headinglink\" aria-hidden=\"true\" hidden>#</a></h".$level.">";
+			if (is_string_empty($headlinktext)) $headlinktext = $this->yellow->system->get("headinglinkContent");
+			$output .= "<".$name." id=\"".preg_replace('/[^a-zA-Z0-9]+/', '-', strtolower($content))."\" class=\"anchor-heading\">".$content."<a href=\"#".preg_replace('/[^a-zA-Z0-9]+/', '-', strtolower($content))."\" class=\"headinglink\" aria-hidden=\"true\" hidden>".$headlinktext."</a></".$name.">";
 		}
 		return $output;
 	}
