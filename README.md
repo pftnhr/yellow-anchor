@@ -1,4 +1,4 @@
-# Headinglink 0.8.21
+# Headinglink 0.8.22
 
 Add anchor links next to headings in the content.
 
