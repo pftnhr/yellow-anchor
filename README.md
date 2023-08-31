@@ -1,6 +1,6 @@
 # Headinglink 0.8.21
 
-Creates anchor links next to headings in the content.
+Add anchor links next to headings in the content.
 
 <p align="center"><img src="headinglink-screenshot.png" alt="Screenshot"></p>
 
@@ -37,3 +37,8 @@ I built this extension because of an encouraging comment by Mark Seuffert.
 ## Developer
 
 Robert Pfotenhauer. [Get help](https://datenstrom.se/yellow/help/).
+
+## ToDo
+
+- [] Make it work with markdown syntax (`#`)
+- [] Make link text customizable
