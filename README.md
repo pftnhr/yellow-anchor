@@ -40,5 +40,5 @@ Robert Pfotenhauer. [Get help](https://datenstrom.se/yellow/help/).
 
 ## ToDo
 
-- [] Make it work with markdown syntax (`#`)
-- [] Make link text customizable
+- [ ] Make it work with markdown syntax (`#`)
+- [ ] Make link text customizable
