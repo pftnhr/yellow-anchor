@@ -21,10 +21,10 @@ Making a headline with anchor link:
 
 becomes
 
-    <h2 id="my-level-2-headline" class="anchor-heading">My level 2 headline<a href="#my-level-2-headline" class="headinglink" aria-hidden="true" hidden>#</a></h2>
-    <h3 id="my-level-3-headline" class="anchor-heading">My level 3 headline<a href="#my-level-3-headline" class="headinglink" aria-hidden="true" hidden>¶</a></h3>
+    <h2 id="my-level-2-headline" class="anchor-heading">My level 2 headline<a href="#my-level-2-headline" class="headinglink smooth" aria-hidden="true" hidden>#</a></h2>
+    <h3 id="my-level-3-headline" class="anchor-heading">My level 3 headline<a href="#my-level-3-headline" class="headinglink smooth" aria-hidden="true" hidden>¶</a></h3>
 
-You can create headings for all 6 levels but keep in mind that a level 1 headline should only appear once per page.
+You can create headings for all 6 levels but keep in mind that a level 1 headline should only appear once per page. Class `smooth` is only for smooth scrolling via JavaScript (see `headinglink.js`).
 
 ## Settings
 

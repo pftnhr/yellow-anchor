@@ -19,7 +19,7 @@ class YellowHeadinglink {
 			list($content, $headlinktext) = $this->yellow->toolbox->getTextArguments($text);
 			if (is_string_empty($content)) $content = "Heading";
 			if (is_string_empty($headlinktext)) $headlinktext = $this->yellow->system->get("headinglinkContent");
-			$output .= "<".$name." id=\"".preg_replace('/[^a-zA-Z0-9]+/', '-', strtolower($content))."\" class=\"anchor-heading\">".$content."<a href=\"#".preg_replace('/[^a-zA-Z0-9]+/', '-', strtolower($content))."\" class=\"headinglink\" aria-hidden=\"true\" hidden>".$headlinktext."</a></".$name.">";
+			$output .= "<".$name." id=\"".preg_replace('/[^a-zA-Z0-9]+/', '-', strtolower($content))."\" class=\"anchor-heading\">".$content."<a href=\"#".preg_replace('/[^a-zA-Z0-9]+/', '-', strtolower($content))."\" class=\"headinglink smooth\" aria-hidden=\"true\" hidden>".$headlinktext."</a></".$name.">";
 		}
 		return $output;
 	}
@@ -30,6 +30,7 @@ class YellowHeadinglink {
 		if ($name=="header") {
 			$extensionLocation = $this->yellow->system->get("coreServerBase").$this->yellow->system->get("coreExtensionLocation");
 			$output = "<link rel=\"stylesheet\" type=\"text/css\" media=\"all\" href=\"{$extensionLocation}headinglink.css\" />\n";
+			$output .= "<script type=\"text/javascript\" defer=\"defer\" src=\"{$extensionLocation}headinglink.js\"></script>\n";
 		}
 		return $output;
 	}
