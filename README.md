@@ -32,7 +32,7 @@ There are no settings.
 
 ## Acknowledgements
 
-I built this extension because of an encouraging comment by Mark Seuffert.
+I built this extension because of an encouraging [comment](https://github.com/datenstrom/yellow/discussions/887#discussioncomment-6846569) by Mark Seuffert.
 
 ## Developer
 
