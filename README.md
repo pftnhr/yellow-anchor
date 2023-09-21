@@ -1,6 +1,6 @@
-# Headinglink 0.8.22
+# Headinglink 0.8.23
 
-Add anchor links next to headings in the content.
+Create Anchor Links next to headlines
 
 <p align="center"><img src="headinglink-screenshot.png" alt="Screenshot"></p>
 
@@ -8,9 +8,9 @@ Add anchor links next to headings in the content.
 
 [Download ZIP file](https://github.com/pftnhr/yellow-headinglink/archive/refs/heads/main.zip) and copy it into your `system/extensions` folder. [Learn more about extensions](https://github.com/annaesvensson/yellow-update).
 
-## How to make anchor links next to the contents headline
+## How to make anchor links next to headlines
 
-Create a `[h2]` shortcut.
+Create an `[h2]` shortcut.
 
 ## Examples
 
@@ -21,10 +21,10 @@ Making a headline with anchor link:
 
 becomes
 
-    <h2 id="my-level-2-headline" class="anchor-heading">My level 2 headline<a href="#my-level-2-headline" class="headinglink smooth" aria-hidden="true" hidden>#</a></h2>
-    <h3 id="my-level-3-headline" class="anchor-heading">My level 3 headline<a href="#my-level-3-headline" class="headinglink smooth" aria-hidden="true" hidden>¶</a></h3>
+    <h2 id="my-level-2-headline" class="anchor-heading">My level 2 headline<a href="#my-level-2-headline" class="headinglink" aria-hidden="true" hidden>#</a></h2>
+    <h3 id="my-level-3-headline" class="anchor-heading">My level 3 headline<a href="#my-level-3-headline" class="headinglink" aria-hidden="true" hidden>¶</a></h3>
 
-You can create headings for all 6 levels but keep in mind that a level 1 headline should only appear once per page. Class `smooth` is only for smooth scrolling via JavaScript (see `headinglink.js`).
+You can create headings for all 6 levels but keep in mind that a level 1 headline should only appear once per page.
 
 ## Settings
 
@@ -41,8 +41,3 @@ I built this extension because of an encouraging [comment](https://github.com/da
 ## Developer
 
 Robert Pfotenhauer. [Get help](https://datenstrom.se/yellow/help/).
-
-## ToDo
-
-- [x] Make it work with syntax (`h2`)
-- [x] Make link text customizable

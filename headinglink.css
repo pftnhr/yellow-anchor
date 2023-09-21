@@ -1,3 +1,5 @@
+/* Headinglink extension, https://github.com/pftnhr/yellow-headinglink */
+
 .content h1:hover .headinglink,
 .content h2:hover .headinglink,
 .content h3:hover .headinglink,
@@ -8,12 +10,4 @@
   margin-inline-start: 0.5em;
   font-weight: 500;
   user-select: none;
-}
-
-.anchor-heading {
-  /* room for your creativity */
-}
-
-a.headinglink {
-  /* room for your creativity */
 }
