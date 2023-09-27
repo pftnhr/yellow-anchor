@@ -1,6 +1,6 @@
 # Headinglink 0.8.23
 
-Create Anchor Links next to headlines
+Create Anchor Links next to headlines.
 
 <p align="center"><img src="headinglink-screenshot.png" alt="Screenshot"></p>
 
