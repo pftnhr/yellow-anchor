@@ -1,6 +1,6 @@
-# Anchor 0.8.24
+# Anchor 0.8.15
 
-Create Anchor Links next to headlines.
+Show anchor links next to headings.
 
 <p align="center"><img src="anchor-screenshot.png" alt="Screenshot"></p>
 
@@ -8,31 +8,54 @@ Create Anchor Links next to headlines.
 
 [Download ZIP file](https://github.com/pftnhr/yellow-anchor/archive/refs/heads/main.zip) and copy it into your `system/extensions` folder. [Learn more about extensions](https://github.com/annaesvensson/yellow-update).
 
-## How to make anchor links next to headlines
+## How to show anchors
 
-Create an `[h2]` shortcut.
+This extension adds anchors next to headings, which allows users to click and bookmark a specific section of a page. It's possible to configure anchors with CSS. You can use any icon of the [icon extension](https://github.com/annaesvensson/yellow-icon) and [emoji extension](https://github.com/annaesvensson/yellow-emoji).
+
+If you don't want anchors to be shown on a page, set `Anchor: exclude` in the [page settings](https://github.com/annaesvensson/yellow-core#settings-page) at the top of a page.
 
 ## Examples
 
-Making a headline with anchor link:
+Customising CSS for basic hover:
 
-    [h2 "My level 2 headline"]
-    [h3 "My level 3 headline" ¶]
+```
+.anchor-link {
+    opacity: 0;
+}
+:hover > .anchor-link {
+    opacity: 0.9;
+}
+```
 
-becomes
+Customising CSS for text anchor:
 
-    <h2 id="my-level-2-headline" class="anchor-heading">My level 2 headline<a href="#my-level-2-headline" class="anchor" aria-hidden="true" hidden>#</a></h2>
-    <h3 id="my-level-3-headline" class="anchor-heading">My level 3 headline<a href="#my-level-3-headline" class="anchor" aria-hidden="true" hidden>¶</a></h3>
+```
+.anchor-link:before {
+    content: "#";
+}
+.anchor-link {
+    margin-left: 0.5em;
+    font-size: inherit;
+}
+.anchor-icon {
+    display: none;
+}
+```
+ 
+Configuring different icons in the settings:
 
-You can create headings for all 6 levels but keep in mind that a level 1 headline should only appear once per page.
+```
+AnchorIcon: icon icon-link
+AnchorIcon: icon icon-hashtag
+AnchorIcon: emoji emoji-link
+AnchorIcon: emoji emoji-anchor
+```
 
 ## Settings
 
-The following settings can be configured in file system/extensions/yellow-system.ini:
+The following settings can be configured in file `system/extensions/yellow-system.ini`:
 
-anchorContent = default link text
-
-After your headline text you can set a link text other than default.
+`AnchorIcon` = class name of anchor icon, `anchor` to show the default icon
 
 ## Acknowledgements
 
