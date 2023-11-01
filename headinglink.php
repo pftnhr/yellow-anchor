@@ -33,7 +33,6 @@ class YellowHeadinglink {
 		if ($name=="header") {
 			$extensionLocation = $this->yellow->system->get("coreServerBase").$this->yellow->system->get("coreExtensionLocation");
 			$output = "<link rel=\"stylesheet\" type=\"text/css\" media=\"all\" href=\"{$extensionLocation}headinglink.css\" />\n";
-			$output .= "<script type=\"text/javascript\" defer=\"defer\" src=\"{$extensionLocation}headinglink.js\"></script>\n";
 		}
 		return $output;
 	}

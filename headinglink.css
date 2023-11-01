@@ -1,5 +1,9 @@
 /* Headinglink extension, https://github.com/pftnhr/yellow-headinglink */
 
+html {
+  scroll-behavior: smooth;
+}
+
 .content h1:hover .headinglink,
 .content h2:hover .headinglink,
 .content h3:hover .headinglink,
