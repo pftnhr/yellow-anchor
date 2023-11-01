@@ -1,0 +1,12 @@
+/* Anchor extension, https://github.com/pftnhr/yellow-anchor */
+
+html {
+  scroll-behavior: smooth;
+}
+
+:hover > .anchor {
+  display: inline-flex;
+  margin-inline-start: 0.5em;
+  font-weight: 500;
+  user-select: none;
+}

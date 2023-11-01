@@ -1,12 +1,12 @@
-# Headinglink 0.8.23
+# Anchor 0.8.24
 
 Create Anchor Links next to headlines.
 
-<p align="center"><img src="headinglink-screenshot.png" alt="Screenshot"></p>
+<p align="center"><img src="anchor-screenshot.png" alt="Screenshot"></p>
 
 ## How to install an extension
 
-[Download ZIP file](https://github.com/pftnhr/yellow-headinglink/archive/refs/heads/main.zip) and copy it into your `system/extensions` folder. [Learn more about extensions](https://github.com/annaesvensson/yellow-update).
+[Download ZIP file](https://github.com/pftnhr/yellow-anchor/archive/refs/heads/main.zip) and copy it into your `system/extensions` folder. [Learn more about extensions](https://github.com/annaesvensson/yellow-update).
 
 ## How to make anchor links next to headlines
 
@@ -21,8 +21,8 @@ Making a headline with anchor link:
 
 becomes
 
-    <h2 id="my-level-2-headline" class="anchor-heading">My level 2 headline<a href="#my-level-2-headline" class="headinglink" aria-hidden="true" hidden>#</a></h2>
-    <h3 id="my-level-3-headline" class="anchor-heading">My level 3 headline<a href="#my-level-3-headline" class="headinglink" aria-hidden="true" hidden>¶</a></h3>
+    <h2 id="my-level-2-headline" class="anchor-heading">My level 2 headline<a href="#my-level-2-headline" class="anchor" aria-hidden="true" hidden>#</a></h2>
+    <h3 id="my-level-3-headline" class="anchor-heading">My level 3 headline<a href="#my-level-3-headline" class="anchor" aria-hidden="true" hidden>¶</a></h3>
 
 You can create headings for all 6 levels but keep in mind that a level 1 headline should only appear once per page.
 
@@ -30,7 +30,7 @@ You can create headings for all 6 levels but keep in mind that a level 1 headlin
 
 The following settings can be configured in file system/extensions/yellow-system.ini:
 
-headinglinkContent = default link text
+anchorContent = default link text
 
 After your headline text you can set a link text other than default.
 
