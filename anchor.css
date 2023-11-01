@@ -1,12 +1,24 @@
 /* Anchor extension, https://github.com/pftnhr/yellow-anchor */
 
-html {
-  scroll-behavior: smooth;
+.anchor-link {
+    display: inline-block;
+    margin-left: 0.7em;
+    font-size: 0.7em;
+    opacity: 0.5
 }
-
-:hover > .anchor {
-  display: inline-flex;
-  margin-inline-start: 0.5em;
-  font-weight: 500;
-  user-select: none;
+.anchor-link:hover {
+    opacity: 1;
+}
+.anchor-icon {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    background-color: currentcolor;
+    background-size: 1em 1em;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.anchor-icon-anchor {
+    -webkit-mask: url("anchor-stack.svg#anchor");
+    mask: url("anchor-stack.svg#anchor");
 }
