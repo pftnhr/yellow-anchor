@@ -10,7 +10,7 @@ Show anchor links next to headings.
 
 ## How to show anchors
 
-This extension adds anchors next to headings, which allows users to click and bookmark a specific section of a page. It's possible to configure anchors with CSS. You can use any icon of the [icon extension](https://github.com/annaesvensson/yellow-icon) and [emoji extension](https://github.com/annaesvensson/yellow-emoji).
+This extension adds anchors next to headings, which allows users to click and bookmark a specific section of a page. It's possible to configure anchors with CSS in your `system/themes/theme.css`. You can use any icon of the [icon extension](https://github.com/annaesvensson/yellow-icon) and [emoji extension](https://github.com/annaesvensson/yellow-emoji).
 
 If you don't want anchors to be shown on a page, set `Anchor: exclude` in the [page settings](https://github.com/annaesvensson/yellow-core#settings-page) at the top of a page.
 
@@ -39,6 +39,15 @@ Customising CSS for text anchor:
 }
 .anchor-icon {
     display: none;
+}
+```
+
+Customising CSS for different default icon:
+
+```
+.anchor-icon-anchor {
+    -webkit-mask: url("hyperlink.svg");
+    mask: url("hyperlink.svg");
 }
 ```
  
