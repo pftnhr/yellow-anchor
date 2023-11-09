@@ -17,7 +17,7 @@ class YellowAnchor {
         if (!preg_match("/exclude/i", $page->get("anchor"))) {
             $location = $page->getPage("main")->getLocation(true);
             $icon = $this->yellow->system->get("anchorIcon");
-            if ($icon=="anchor") $icon = "anchor-icon anchor-icon-default";
+            if ($icon=="anchor-icon-default") $icon = "anchor-icon anchor-icon-default";
             $callback = function ($matches) use ($location, $icon) {
                 $anchor = "<a href=\"$location#$matches[2]\" class=\"anchor-link\" title=\"#".htmlspecialchars($matches[2])."\"><i class=\"".htmlspecialchars($icon)."\" aria-label=\"Anchor\"></i></a>";
                 return "<h$matches[1] id=\"$matches[2]\">$matches[3]$anchor</h$matches[1]>";
