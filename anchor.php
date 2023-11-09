@@ -8,7 +8,7 @@ class YellowAnchor {
     // Handle initialisation
     public function onLoad($yellow) {
         $this->yellow = $yellow;
-        $this->yellow->system->setDefault("anchorIcon", "anchor");
+        $this->yellow->system->setDefault("anchor-icon-default", "default");
     }
 
     // Handle page content in HTML format
@@ -16,8 +16,8 @@ class YellowAnchor {
         $output = null;
         if (!preg_match("/exclude/i", $page->get("anchor"))) {
             $location = $page->getPage("main")->getLocation(true);
-            $icon = $this->yellow->system->get("anchorIcon");
-            if ($icon=="anchor") $icon = "anchor-icon anchor-icon-anchor";
+            $icon = $this->yellow->system->get("anchor-icon-default");
+            if ($icon=="anchor") $icon = "anchor-icon anchor-icon-default";
             $callback = function ($matches) use ($location, $icon) {
                 $anchor = "<a href=\"$location#$matches[2]\" class=\"anchor-link\" title=\"#".htmlspecialchars($matches[2])."\"><i class=\"".htmlspecialchars($icon)."\" aria-label=\"Anchor\"></i></a>";
                 return "<h$matches[1] id=\"$matches[2]\">$matches[3]$anchor</h$matches[1]>";

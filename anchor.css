@@ -18,7 +18,7 @@
     background-repeat: no-repeat;
     background-position: center center;
 }
-.anchor-icon-anchor {
-    -webkit-mask: url("anchor-stack.svg#anchor");
-    mask: url("anchor-stack.svg#anchor");
+.anchor-icon-default {
+    -webkit-mask: url("anchor-stack.svg#default");
+    mask: url("anchor-stack.svg#default");
 }

@@ -45,7 +45,7 @@ Customising CSS for text anchor:
 Customising CSS for different default icon:
 
 ```
-.anchor-icon-anchor {
+.anchor-icon-default {
     -webkit-mask: url("hyperlink.svg");
     mask: url("hyperlink.svg");
 }
@@ -64,11 +64,11 @@ AnchorIcon: emoji emoji-anchor
 
 The following settings can be configured in file `system/extensions/yellow-system.ini`:
 
-`AnchorIcon` = class name of anchor icon, `anchor` to show the default icon
+`AnchorIcon` = class name of anchor icon, `default` to show the default icon
 
 ## Acknowledgements
 
-I built this extension because of an encouraging [comment](https://github.com/datenstrom/yellow/discussions/887#discussioncomment-6846569) by Mark Seuffert.
+I built this extension because of an encouraging [comment](https://github.com/datenstrom/yellow/discussions/887#discussioncomment-6846569) by Mark Seuffert, who also made some important changes.
 
 ## Developer
 
