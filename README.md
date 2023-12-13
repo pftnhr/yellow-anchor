@@ -2,7 +2,7 @@
 
 Show anchor links next to headings.
 
-<p align="center"><img src="anchor-screenshot.png" alt="Screenshot"></p>
+<p align="center"><img src="SCREENSHOT.png" alt="Screenshot"></p>
 
 ## How to install an extension
 
