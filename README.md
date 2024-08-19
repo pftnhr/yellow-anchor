@@ -1,4 +1,4 @@
-# Anchor 0.9.1
+# Anchor 0.9.2
 
 Show anchor links next to headings.
 
